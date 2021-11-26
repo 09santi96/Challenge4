@@ -4,9 +4,9 @@
 body{
     background: url(../images/bg-desktop.svg);
     background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
 }
 div{
-    border: 1px dashed rgb(253, 253, 253);
     margin: 0.5rem;
 }
 .logo{
@@ -17,7 +17,7 @@ width: 13rem;
 }
 .main_container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
     grid-auto-rows: auto;
     margin: 1.8rem 3rem;
 }
@@ -26,20 +26,20 @@ width: 13rem;
     font-size: 20px;
     padding: 2rem 3rem;
 }
+.container_img{
+    width: auto;
+}
 .tittle{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    font-size: 2.5rem;
 }
 .text{
-    /*font-family: 'Open Sans', sans-serif;*/
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
 }
-.container_img{
-    width: auto;
 
-}
 .img1{
     width: 100%;
 }
@@ -48,20 +48,91 @@ width: 13rem;
     background-color:white;
     font-family: 'Poppins', sans-serif;
     border: none;
+    margin: 1rem;
     padding: 20px 70px;
     border-radius: 30px 30px;
     box-shadow: 2px 2px 20px rgb(51, 50, 50);
     font-size: 1rem;
+    color:hsl(257, 40%, 49%);
 }
 .button1:hover{
     background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    color: white;
 }
 
 .media{
     display: flex;
     justify-content: flex-end;
 }
-    
+ion-icon{
+    color: aliceblue;
+    font-size: 30px;
+    margin: 10px;
+}
+ion-icon:hover{
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+/*@media (max-width:1211px){
+    body{
+        background-color: purple;
+    }
+}*/
+
+@media (max-width:1211px){
+    body{
+        background: url(../images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    .main_container{
+        display: grid;
+        justify-content: space-evenly;
+        justify-items: center;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        align-items: center;
+    }
+    .container_text{
+        color: white;
+        padding: 0rem;
+        width: 60%;
+    }
+    .tittle{
+        font-size: 25px;
+        padding: 0rem 1rem;
+    }
+    .text{
+
+    }
+
+    .container_img{
+        width: 60%;
+        padding: 0;
+    }
+    .logo{
+        width: 8rem;
+    }
+    .container_logo{
+         padding: 0rem;
+         margin: 3rem 2rem;
+    }
+    .button1{
+        margin: 2rem;
+        padding: 10px 70px;
+        border-radius: 30px 30px;
+        font-size: 1rem;
+    }
+
+    .media{
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+    }
+}
     
     
     
